@@ -26,17 +26,8 @@ $ yarn install
 
 ```
 $ yarn start // json-server 실행
-$ yarn start:dev // localhost 싫행
+$ yarn start:dev // localhost 실행
 ```
-<br>
-
-## 😎 팀원
-
-- [김지영(팀장)](https://github.com/Jeong-jeong)
-- [고병표](https://github.com/kokoball)
-- [유제호](https://github.com/ludacirs)
-- [홍수연](https://github.com/suyeon-hong)
-
 <br>
 
 ## 🔥 프로젝트 과정 소개
@@ -58,15 +49,13 @@ $ yarn start:dev // localhost 싫행
 
 #### ✔ 고병표
  - `Card` 컴포넌트 구현
-    - hover시 보더 스타일 적용
-    - status 가 '상담중'일시 상단 버튼표기 
 
 #### ✔ 유제호
 - `Header`, 반응형 구현
 - 체크리스트 상태값에 따라 카드 필터링 로직 구현
 
 #### ✔ 홍수연
-- `Buttons`, `Toggle` 컴포넌트 구현
+- `Button`, `Toggle`, `EmptyBox` 컴포넌트 구현
 - 모바일 UI 적용
 
 <br>
