@@ -54,6 +54,7 @@ export const FilterTab = styled.div`
 export const CardsContainer = styled.div`
   ${flexbox({ jc: 'start', ai: 'center' })};
   flex-wrap: wrap;
+  gap: ${({ theme }) => theme.gap.base * 4}px;
 
   @media ${({ theme }) => theme.device.mobile} {
     flex-direction: column;

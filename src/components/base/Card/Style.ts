@@ -2,32 +2,15 @@ import styled from 'styled-components';
 import { flexbox } from '@styles/commonStyles';
 import { font12, font14, font16 } from '@styles/fonts';
 
-export interface Wrapper {
-  width: number | string;
-  height: number | string;
-}
-
-export const CardWrapper = styled.div<Wrapper>`
-  width: ${({ width }) => `${width}px`};
-  height: ${({ height }) => `${height}px`};
-  padding: ${({ theme }) => `${theme.gap.base * 6}px`}
-    ${({ theme }) => `${theme.gap.base * 4}px`};
-  margin-right: ${({ theme }) => `${theme.gap.base * 4}px`};
-  margin-bottom: ${({ theme }) => `${theme.gap.base * 4}px`};
+export const CardWrapper = styled.div`
+  flex: 0 0 auto;
+  width: 366px;
+  height: 356px;
+  padding: ${({ theme }) => `${theme.gap.base * 6}px ${theme.gap.base * 4}px`};
   border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: ${({ theme }) => `${theme.size.borderRadius}px`};
   &:hover {
     border: 1px solid ${({ theme }) => theme.colors.skyBlue};
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0px;
-  }
-
-  @media ${({ theme }) => theme.device.desktop} {
-    &:nth-child(3n) {
-      margin-right: ${({ theme }) => `${theme.gap.base * 4}px`};
-    }
   }
 
   @media ${({ theme }) => theme.device.mobile} {

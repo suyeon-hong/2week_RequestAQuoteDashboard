@@ -17,13 +17,11 @@ export interface RequestsType {
 
 export interface CardProps {
   requests: ICardData;
-  width: number;
-  height: number;
 }
 
-export const Card = ({ requests, width, height }: CardProps): ReactElement => {
+export const Card = ({ requests }: CardProps): ReactElement => {
   return (
-    <S.CardWrapper key={requests?.id} width={width} height={height}>
+    <S.CardWrapper key={requests?.id}>
       <S.TitleBox>
         <div>{requests.title}</div>
         {requests.status === '상담중' && (

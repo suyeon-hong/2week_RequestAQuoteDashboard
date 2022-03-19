@@ -56,12 +56,7 @@ const Home = () => {
       {filteredCard && (
         <S.CardsContainer>
           {filteredCard.map((cardInfo) => (
-            <Card
-              key={cardInfo.id}
-              width={366}
-              height={356}
-              requests={cardInfo}
-            />
+            <Card key={cardInfo.id} requests={cardInfo} />
           ))}
         </S.CardsContainer>
       )}
