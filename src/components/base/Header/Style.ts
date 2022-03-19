@@ -155,8 +155,7 @@ export const MenuWrapperMobile = styled.div`
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     &.hidden {
-      width: 0;
-      height: 100%;
+      transform: translateX(-100%);
     }
     &:not(.hidden) ul {
       transform: translateX(0);
